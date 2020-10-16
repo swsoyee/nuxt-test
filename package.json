@@ -13,15 +13,22 @@
     "@nuxt/typescript-runtime": "^2.0.0",
     "ant-design-vue": "^1.6.5",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "semver": "^7.3.2"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
     "@nuxt/typescript-build": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.5.0",
+    "eslint": "^7.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^7.0.1",
     "jest": "^26.5.0",
+    "standard": "^14.3.4",
     "ts-jest": "^26.4.1",
     "vue-jest": "^3.0.4"
   }
