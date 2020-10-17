@@ -11,6 +11,8 @@
       <p>
         <a :href="isBaidu ? 'https://www.baidu.com' : 'https://www.google.com'">搜索引擎：{{ isBaidu ? '百度' : '谷歌' }}</a>
       </p>
+      <p>{{ message }}</p>
+      <button @click="reverseMessage">反转字符串</button>
       <hr>
   </div>
 </template>
@@ -21,6 +23,12 @@ export default {
         return {
             seen: true,
             isBaidu: true,
+            message: '第一次学习Vue.js',
+        }
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split('').reverse().join('');
         }
     }
 }
