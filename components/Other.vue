@@ -13,6 +13,9 @@
       </p>
       <p>{{ message | capitalize }}</p>
       <button @click="reverseMessage">反转字符串</button>
+      <ol>
+          <li v-for="url in urls" :key="url.label">{{ url.label }}：{{ url.link }}</li>
+      </ol>
       <hr>
   </div>
 </template>
@@ -23,6 +26,16 @@ export default {
         return {
             seen: true,
             isBaidu: true,
+            urls: [
+                {
+                    label: '百度',
+                    link: 'https://www.baidu.com',
+                },
+                {
+                    label: '谷歌',
+                    link: 'https://www.google.com',
+                }
+            ],
             message: 'this is my first time to learn Vue.js',
         }
     },
